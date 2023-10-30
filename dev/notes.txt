@@ -1,1 +1,2 @@
-- .. install Tailwind
+- x install Tailwind
+- .. add fieldset and legend
