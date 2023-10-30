@@ -1,6 +1,9 @@
 .ex002 {
-
-	
+	.content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+	}
 }
 
 .ex001 {
