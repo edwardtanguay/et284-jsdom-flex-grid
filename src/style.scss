@@ -1,8 +1,7 @@
-body {
-	background-color: #eee;
-	font-family: sans-serif;
-	padding: .5rem 1rem;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 .boxWrapper {
 	border: 1px solid #555;
