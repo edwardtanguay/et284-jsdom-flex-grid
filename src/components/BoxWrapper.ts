@@ -1,7 +1,8 @@
-export const BoxWrapper = (func : () => string) => {
+export const BoxWrapper = (title: string, func : () => string) => {
 	return /*html*/ `
-	<div class="boxWrapper">
+	<fieldset class="boxWrapper">
+		<legend>${title}</legend>
 		${func()}
-	</div>
+	</fieldset>
 	`
 }
