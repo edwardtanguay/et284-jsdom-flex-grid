@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .boxWrapper {
 	border: 1px solid #555;
 	border-radius: .5rem;
@@ -16,24 +15,5 @@
 		opacity: .7;
 		border-radius: .2rem;
 		padding: .1rem;
-	}
-}
-
-.ex001 {
-	.content {
-		display: grid;
-		gap: 1rem;
-	}
-
-	@media (min-width: 40rem) {
-		.content {
-			grid-template-columns: repeat(2, 1fr);
-		}
-	}
-
-	@media (min-width: 60rem) {
-		.content {
-			grid-template-columns: repeat(4, 1fr);
-		}
 	}
 }
