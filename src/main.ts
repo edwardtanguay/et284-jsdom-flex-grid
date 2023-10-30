@@ -6,6 +6,6 @@ import './main.scss'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 	<h1 class="text-3xl mb-6">Flex and Grid Practice</h1>
-	${BoxWrapper('Ex002', Ex002, 'three-width responsive')}
-	${BoxWrapper('Ex001', Ex001, 'three-width responsive')}
+	${BoxWrapper('Ex002', Ex002, 'grid three-width responsive')}
+	${BoxWrapper('Ex001', Ex001, 'grid three-width responsive')}
 `
