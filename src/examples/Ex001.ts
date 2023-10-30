@@ -3,13 +3,18 @@ export const Ex001 = () => {
 	
 	<div class="ex001">
 		<div class="gec">
-			this is a test
+			<div class="flow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis itaque neque modi in eaque iste cumque nobis harum perspiciatis libero molestiae similique ea porro, voluptas pariatur totam aliquam labore aperiam.</div>
+			<div class="flow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis itaque neque modi in eaque iste cumque nobis harum perspiciatis libero molestiae similique ea porro, voluptas pariatur totam aliquam labore aperiam.</div>
+			<div class="flow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis itaque neque modi in eaque iste cumque nobis harum perspiciatis libero molestiae similique ea porro, voluptas pariatur totam aliquam labore aperiam.</div>
+			<div class="flow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis itaque neque modi in eaque iste cumque nobis harum perspiciatis libero molestiae similique ea porro, voluptas pariatur totam aliquam labore aperiam.</div>
 		</div>
 	</div>
 
 <style>
 .gec {
-	color: blue;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1rem;
 }
 </style>
 	`
