@@ -1,8 +1,29 @@
 .ex002 {
 	.content {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
 		gap: 1rem;
+
+		div {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: rgb(255, 255, 180);
+			border-radius: .5rem;
+			padding: 0 0 .3rem 0;
+			border: 1px solid rgb(95, 184, 95);
+		}
+	}
+
+	@media (min-width: 40rem) {
+		.content {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media (min-width: 60rem) {
+		.content {
+			grid-template-columns: repeat(4, 1fr);
+		}
 	}
 }
 

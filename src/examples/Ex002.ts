@@ -1,12 +1,21 @@
 export const Ex002 = () => {
+	const words = [
+		"apple",
+		"car",
+		"house",
+		"dog",
+		"cat",
+		"book",
+		"computer",
+		"friend",
+		"flower",
+		"phone"
+	];
 	return /*html*/ `
 	
 	<div class="ex002">
 		<div class="content">
-			<div class="flow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis itaque neque modi in eaque iste cumque nobis harum perspiciatis libero molestiae similique ea porro, voluptas pariatur totam aliquam labore aperiam.</div>
-			<div class="flow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis itaque neque modi in eaque iste cumque nobis harum perspiciatis libero molestiae similique ea porro, voluptas pariatur totam aliquam labore aperiam.</div>
-			<div class="flow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis itaque neque modi in eaque iste cumque nobis harum perspiciatis libero molestiae similique ea porro, voluptas pariatur totam aliquam labore aperiam.</div>
-			<div class="flow">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis itaque neque modi in eaque iste cumque nobis harum perspiciatis libero molestiae similique ea porro, voluptas pariatur totam aliquam labore aperiam.</div>
+			${words.map(word => `<div>${word}</div>`).join('')}	
 		</div>
 	</div>
 `
