@@ -10,3 +10,14 @@
 	padding: 1rem;
 	margin-bottom: 2rem;
 }
+
+.ex001 {
+	.gec {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1rem;
+	}
+}
+
+.ex002 {
+}
