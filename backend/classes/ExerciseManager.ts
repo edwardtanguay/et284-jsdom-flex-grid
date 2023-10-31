@@ -9,7 +9,14 @@ export class ExerciseManager {
 	}
 
 	getNextExerciseId() {
-		return '888';
+		const exercisePathAndFileNames = tools.getDirectoryPathAndFileNames('./src/examples');
+		const lastExercisePathAndFileName = exercisePathAndFileNames[exercisePathAndFileNames.length - 1];
+		const matchInfo = lastExercisePathAndFileName.match(/(\d{3})/);
+		const lastNumberAsString = matchInfo[0]; // '008'
+		const lastNumberAsNumber = Number(lastNumberAsString);
+		const nextNumberAsNumber = lastNumberAsNumber + 1;
+		const nextNumberAsString = String(nextNumberAsNumber);
+		return nextNumberAsString;
 	}
 
 	public createFile() {

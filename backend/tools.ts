@@ -341,7 +341,7 @@ export const replaceAll = (text:string, search:string, replace:string) => {
 /**
  * Get array of files from a directory, non-recursive.
  * 
- * const files = qfil.getDirectoryPathAndFileNames('public/images');
+ * const files = qfil.getDirectoryPathAndFileNames('./public/images');
  * 
  * [
  * 'public/images/field.jpg',
