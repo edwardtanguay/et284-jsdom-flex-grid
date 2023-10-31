@@ -1,3 +1,5 @@
+import * as tools from '../tools.js';
+
 export class ExerciseManager {
 
 	constructor() {
@@ -5,7 +7,7 @@ export class ExerciseManager {
 	}
 
 	public createFile() {
-		console.log('creating file');
+		tools.createFile('./src/examples/Ex999.ts', 'the content');
 	}
 
 }
