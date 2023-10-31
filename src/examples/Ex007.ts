@@ -23,10 +23,21 @@ export const Ex007 = () => {
 
 setTimeout(() => {
 	const ex007contentElem = document.querySelector<HTMLDivElement>('.ex007 .content');
-	const buttonRedElem = document.querySelector<HTMLButtonElement>('.ex007 .buttonArea:nth-child(0)');
+	const buttonRedElem = document.querySelector<HTMLButtonElement>('.buttonArea button:nth-child(1)');
+	const buttonBlueElem = document.querySelector<HTMLButtonElement>('.buttonArea button:nth-child(2)');
+	const buttonGreenElem = document.querySelector<HTMLButtonElement>('.buttonArea button:nth-child(3)');
 
-	if (ex007contentElem && buttonRedElem) {
-		ex007contentElem.style.setProperty('--ball-color', 'orchid');
-		buttonRedElem.style.color = 'red';
+	console.log(buttonRedElem);
+
+	if (ex007contentElem && buttonRedElem && buttonBlueElem && buttonGreenElem) {
+		buttonRedElem.addEventListener('click', () => {
+			ex007contentElem.style.setProperty('--ball-color', 'red');
+		})
+		buttonBlueElem.addEventListener('click', () => {
+			ex007contentElem.style.setProperty('--ball-color', 'navy');
+		})
+		buttonGreenElem.addEventListener('click', () => {
+			ex007contentElem.style.setProperty('--ball-color', 'darkgreen');
+		})
 	}
 })
