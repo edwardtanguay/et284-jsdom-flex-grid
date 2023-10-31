@@ -35,11 +35,19 @@ export class ExerciseManager {
 \`
 }
 `;
-		tools.createFile(`./src/examples/Ex${this.exerciseId}.ts`,content);
+		tools.createFile(`./src/examples/Ex${this.exerciseId}.ts`, content);
 	}
 
 	private addStyleToBeginningOfStylesheet() {
-		tools.addLineInFile('./src/main.scss', '@@FIRSTLINE', 'nnn');
+		const content = `.ex${this.exerciseId} {
+	.content {
+		div {
+			color: red;
+		}
+	}
+}
+		`
+		tools.addLineInFile('./src/main.scss', '@@FIRSTLINE', content);
 	}
 
 }
