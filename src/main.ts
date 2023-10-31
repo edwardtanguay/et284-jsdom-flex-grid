@@ -1,4 +1,5 @@
 import { BoxWrapper } from './components/BoxWrapper';
+import { Ex006 } from './examples/Ex006'
 import { Ex005 } from './examples/Ex005';
 import { Ex004 } from './examples/Ex004';
 import { Ex003 } from './examples/Ex003';
@@ -9,6 +10,7 @@ import './main.scss';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 	<h1 class="text-3xl mb-6">Flex and Grid Practice</h1>
+	${BoxWrapper('Ex006', Ex006, 'flex order')}
 	${BoxWrapper('Ex005', Ex005, 'grid-template-areas')}
 	${BoxWrapper('Ex004', Ex004, 'grid-column: 1/3')}
 	${BoxWrapper('Ex003', Ex003, 'minmax(15rem, 100%)')}
