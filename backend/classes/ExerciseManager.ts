@@ -24,17 +24,16 @@ export class ExerciseManager {
 	}
 
 	private createExerciseComponentFile() {
-		const content = `
-	export const ExNNN = () => {
-		return /*html*/ \`
-		<div class="exNNN">
-			<div class="content">
-				<div>new exercise</div>
-			</div>
+		const content = `export const Ex${this.exerciseId} = () => {
+	return /*html*/ \`
+	<div class="ex${this.exerciseId}">
+		<div class="content">
+			<div>new exercise</div>
 		</div>
-	\`
-	}
-	`;
+	</div>
+\`
+}
+`;
 		tools.createFile(`./src/examples/Ex${this.exerciseId}.ts`,content);
 	}
 
