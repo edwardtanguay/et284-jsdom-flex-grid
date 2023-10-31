@@ -19,8 +19,3 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 	${BoxWrapper('Ex002', Ex002, 'grid three-width responsive')}
 	${BoxWrapper('Ex001', Ex001, 'grid three-width responsive')}
 `;
-
-const ex007contentElem = document.querySelector<HTMLDivElement>('.ex007 .content');
-if (ex007contentElem) {
-	ex007contentElem.style.setProperty('--ball-color', 'red');
-}

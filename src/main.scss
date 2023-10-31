@@ -8,6 +8,7 @@
 			height: 4rem;
 			border-radius: 50%;
 			animation: slide-right 3s linear infinite;
+			margin-top: .5rem;
 		}
 
 		.square {
@@ -16,6 +17,7 @@
 			height: 4rem;
 			animation: slide-right 3s linear infinite;
 			animation-delay: 1.5s;
+			margin-top: .5rem;
 		}
 
 		.messageArea {
@@ -30,13 +32,20 @@
 			}
 		}
 
+		.buttonArea {
+			display: flex;
+			gap: 1rem;
+			justify-content: center;
+			margin-top: .5rem;
+		}
+
 		@keyframes slide-right {
-			from {
+			0% {
 				transform: translateX(0);
 			}
 
-			to {
-				transform: translateX(85vw);
+			50% {
+				transform: translateX(50vw);
 			}
 		}
 	}
