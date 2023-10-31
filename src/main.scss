@@ -1,3 +1,19 @@
+.ex003 {
+	.content {
+		display: grid;
+		grid-template-columns: 3rem minmax(15rem, 100%) minmax(4rem, 14rem) 3rem;
+		gap: .3rem;
+		height: 5rem;
+
+		div {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: burlywood;
+		}
+	}
+}
+
 .ex002 {
 	.content {
 		display: grid;
