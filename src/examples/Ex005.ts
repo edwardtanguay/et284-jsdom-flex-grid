@@ -8,5 +8,5 @@ export const Ex005 = () => {
 			<footer>This is the footer at the bottom</footer>
 		</div>
 	</div>
-`
-}
+`;
+};

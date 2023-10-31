@@ -8,5 +8,5 @@ export const Ex004 = () => {
 			<div class="four">This is the bottom area.</div>
 		</div>
 	</div>
-`
-}
+`;
+};

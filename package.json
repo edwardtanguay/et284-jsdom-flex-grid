@@ -10,7 +10,9 @@
     "preview": "vite preview",
     "backendWatch": "nodemon",
     "buildBackend": "tsc -p ./backend/tsconfig.json",
-    "ce": "node dist/create-exercise.js"
+    "ce": "node dist/create-exercise.js",
+    "format": "prettier --write \"src/**/*.{ts, scss}\"",
+    "lint": "eslint \"src/**/*.{ts, scss}\" --quiet"
   },
   "nodemonConfig": {
     "watch": [
@@ -22,9 +24,12 @@
   "devDependencies": {
     "@types/node": "^20.8.9",
     "autoprefixer": "^10.4.16",
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
     "nodemon": "^3.0.1",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.31",
+    "prettier": "^3.0.3",
     "sass": "^1.69.5",
     "tailwindcss": "^3.3.5",
     "typescript": "^5.0.2",
