@@ -1,7 +1,7 @@
 import { BoxWrapper } from './components/BoxWrapper'
-import { Ex001 } from './examples/Ex001'
-import { Ex002 } from './examples/Ex002'
 import { Ex003 } from './examples/Ex003'
+import { Ex002 } from './examples/Ex002'
+import { Ex001 } from './examples/Ex001'
 import './style.scss'
 import './main.scss'
 

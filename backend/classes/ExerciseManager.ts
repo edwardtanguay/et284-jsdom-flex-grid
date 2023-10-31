@@ -50,4 +50,9 @@ export class ExerciseManager {
 		tools.addLineInFile('./src/main.scss', '@@FIRSTLINE', content);
 	}
 
+	private callComponent() {
+		tools.addLineInFile('./src/main.ts', 'BoxWrapper', '// 111')
+		tools.addLineInFile('./src/main.ts', 'HTML', '// 222')
+	}
+
 }
