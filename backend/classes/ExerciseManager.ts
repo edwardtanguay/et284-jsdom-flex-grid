@@ -19,8 +19,23 @@ export class ExerciseManager {
 		return nextNumberAsString;
 	}
 
-	public createFile() {
-		tools.createFile(`./src/examples/Ex${this.exerciseId}.ts`, 'the content');
+	public createExercise() {
+		this.createExerciseComponentFile();
+	}
+
+	private createExerciseComponentFile() {
+		const content = `
+	export const ExNNN = () => {
+		return /*html*/ \`
+		<div class="exNNN">
+			<div class="content">
+				<div>new exercise</div>
+			</div>
+		</div>
+	\`
+	}
+	`;
+		tools.createFile(`./src/examples/Ex${this.exerciseId}.ts`,content);
 	}
 
 }
