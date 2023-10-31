@@ -1,2 +1,4 @@
-- x install Tailwind
-- .. add fieldset and legend
+- .. make basic ce with test with typescript
+
+
+

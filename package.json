@@ -4,12 +4,25 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "run-p backendWatch frontend",
+    "frontend": "vite --port 4301",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "backendWatch": "nodemon",
+    "buildBackend": "tsc -p ./backend/tsconfig.json",
+    "ce": "node dist/create-exercise.js"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "backend"
+    ],
+    "ext": "ts",
+    "exec": "npm run buildBackend"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
+    "nodemon": "^3.0.1",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.4.31",
     "sass": "^1.69.5",
     "tailwindcss": "^3.3.5",
