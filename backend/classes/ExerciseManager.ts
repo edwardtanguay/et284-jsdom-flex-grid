@@ -14,8 +14,8 @@ export class ExerciseManager {
 		const matchInfo = lastExercisePathAndFileName.match(/(\d{3})/);
 		const lastNumberAsString = matchInfo[0]; // '008'
 		const lastNumberAsNumber = Number(lastNumberAsString);
-		const nextNumberAsNumber = lastNumberAsNumber + 1;
-		const nextNumberAsString = String(nextNumberAsNumber).padStart(3, '0');
+		const nextNumberAsNumber = lastNumberAsNumber + 1; // 8
+		const nextNumberAsString = String(nextNumberAsNumber).padStart(3, '0'); // '009'
 		return nextNumberAsString;
 	}
 
