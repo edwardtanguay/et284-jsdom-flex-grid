@@ -1,7 +1,8 @@
 - x make basic ce with test with typescript
 - x create ExerciseManager that creates a test file in root
 - .. create all files and code to create
-	- .. ./src/examples/Exnnn.ts
+	- ..get exercise number, e.g. 004
+	- ./src/examples/Exnnn.ts
 	----------------------------------------
 	export const ExNNN = () => {
 		return /*html*/ `
