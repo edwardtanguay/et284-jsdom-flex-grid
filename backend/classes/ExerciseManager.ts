@@ -15,7 +15,7 @@ export class ExerciseManager {
 		const lastNumberAsString = matchInfo[0]; // '008'
 		const lastNumberAsNumber = Number(lastNumberAsString);
 		const nextNumberAsNumber = lastNumberAsNumber + 1;
-		const nextNumberAsString = String(nextNumberAsNumber);
+		const nextNumberAsString = String(nextNumberAsNumber).padStart(3, '0');
 		return nextNumberAsString;
 	}
 
