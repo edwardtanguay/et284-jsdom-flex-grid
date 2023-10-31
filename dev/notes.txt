@@ -1,8 +1,34 @@
 - x make basic ce with test with typescript
-- .. create ExerciseManager that creates a test file in root
-
-- define all files to create
-- create first file, e.g. Ex004.ts
+- x create ExerciseManager that creates a test file in root
+- .. create all files and code to create
+	- .. ./src/examples/Exnnn.ts
+	----------------------------------------
+	export const ExNNN = () => {
+		return /*html*/ `
+		<div class="exNNN">
+			<div class="content">
+				<div>new exercise</div>
+			</div>
+		</div>
+	`
+	}
+	----------------------------------------
+	- ./src/main.scss
+		-------------------------------------------
+		.exNNN {
+			.content {
+				div {
+					color: red;
+				}
+			}
+		}
+		-----------------------------------------
+	- ./src/main.ts
+		-------------------------------------------
+		import { ExNNN } from './examples/ExNNN'
+		
+		${BoxWrapper('ExNNN', ExNNN)}
+		-----------------------------------------
 
 
 
