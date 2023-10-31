@@ -22,6 +22,7 @@ export class ExerciseManager {
 	public createExercise() {
 		this.createExerciseComponentFile();
 		this.addStyleToBeginningOfStylesheet();
+		this.createCallComponentCode();
 	}
 
 	private createExerciseComponentFile() {
@@ -50,9 +51,9 @@ export class ExerciseManager {
 		tools.addLineInFile('./src/main.scss', '@@FIRSTLINE', content);
 	}
 
-	private callComponent() {
-		tools.addLineInFile('./src/main.ts', 'BoxWrapper', '// 111')
-		tools.addLineInFile('./src/main.ts', 'HTML', '// 222')
+	private createCallComponentCode() {
+		tools.addLineInFile('./src/main.ts', 'components/BoxWrapper', '// 111')
+		tools.addLineInFile('./src/main.ts', 'querySelector', '// 222')
 	}
 
 }
