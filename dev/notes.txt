@@ -1,4 +1,8 @@
-- .. make basic ce with test with typescript
+- x make basic ce with test with typescript
+- .. create ExerciseManager that creates a test file in root
+
+- define all files to create
+- create first file, e.g. Ex004.ts
 
 
 
