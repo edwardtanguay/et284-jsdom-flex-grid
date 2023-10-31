@@ -52,8 +52,8 @@ export class ExerciseManager {
 	}
 
 	private createCallComponentCode() {
-		tools.addLineInFile('./src/main.ts', 'components/BoxWrapper', '// 111')
-		tools.addLineInFile('./src/main.ts', 'querySelector', '// 222')
+		tools.addLineInFile('./src/main.ts', 'components/BoxWrapper', `import { Ex${this.exerciseId} } from './examples/Ex${this.exerciseId}'`)
+		tools.addLineInFile('./src/main.ts', 'class="text',`	\${BoxWrapper('Ex${this.exerciseId}', Ex${this.exerciseId}, '')}`)
 	}
 
 }
