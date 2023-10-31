@@ -2,7 +2,7 @@
 - x create ExerciseManager that creates a test file in root
 - .. create all files and code to create
 	- x get exercise number, e.g. 004
-	- .. ./src/examples/Exnnn.ts
+	- x ./src/examples/Exnnn.ts
 	----------------------------------------
 	export const ExNNN = () => {
 		return /*html*/ `
@@ -14,7 +14,7 @@
 	`
 	}
 	----------------------------------------
-	- ./src/main.scss
+	- .. ./src/main.scss
 		-------------------------------------------
 		.exNNN {
 			.content {

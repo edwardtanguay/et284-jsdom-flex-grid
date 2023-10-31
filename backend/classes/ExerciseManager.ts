@@ -21,6 +21,7 @@ export class ExerciseManager {
 
 	public createExercise() {
 		this.createExerciseComponentFile();
+		this.addStyleToBeginningOfStylesheet();
 	}
 
 	private createExerciseComponentFile() {
@@ -35,6 +36,10 @@ export class ExerciseManager {
 }
 `;
 		tools.createFile(`./src/examples/Ex${this.exerciseId}.ts`,content);
+	}
+
+	private addStyleToBeginningOfStylesheet() {
+		tools.addLineInFile('./src/main.scss', '@@FIRSTLINE', 'nnn');
 	}
 
 }
