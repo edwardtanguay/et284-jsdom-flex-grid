@@ -30,7 +30,7 @@ export class ExerciseManager {
 	return /*html*/ \`
 	<div class="ex${this.exerciseId}">
 		<div class="content">
-			<div>new exercise</div>
+			<div>nnn</div>
 		</div>
 	</div>
 \`
@@ -42,9 +42,7 @@ export class ExerciseManager {
 	private addStyleToBeginningOfStylesheet() {
 		const content = `.ex${this.exerciseId} {
 	.content {
-		div {
-			color: red;
-		}
+		
 	}
 }
 		`
