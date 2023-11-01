@@ -1,23 +1,23 @@
 .ex007 {
 	.content {
-		--ball-color: #333;
+		--ball-color: #777;
+		--easing: cubic-bezier(0.5, 0, 0.5, 1);
 
-		.ball {
+		.shape {
 			background-color: var(--ball-color);
 			width: 4rem;
 			height: 4rem;
-			border-radius: 50%;
 			animation: slide-right 3s linear infinite;
 			margin-top: .5rem;
+			box-shadow: 5px 5px 3px #aaa;
+		}
+
+		.ball {
+			border-radius: 50%;
 		}
 
 		.square {
-			background-color: var(--ball-color);
-			width: 4rem;
-			height: 4rem;
-			animation: slide-right 3s linear infinite;
 			animation-delay: 1.5s;
-			margin-top: .5rem;
 		}
 
 		.messageArea {

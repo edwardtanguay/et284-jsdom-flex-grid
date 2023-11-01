@@ -3,8 +3,8 @@ export const Ex007 = () => {
 	<div class="ex007">
 		<div class="content">
 			<div class="shapeArea">
-				<div class="ball"></div>
-				<div class="square"></div>
+				<div class="shape ball"></div>
+				<div class="shape square"></div>
 			</div>
 			<div class="messageArea">
 				<div class="message1">The ball is moving.</div>
@@ -12,9 +12,9 @@ export const Ex007 = () => {
 				<div class="message3">The square is moving.</div>
 			</div>
 			<div class="buttonArea">
-				<button>Red</button>
-				<button>Blue</button>
-				<button>Green</button>
+				<button>red</button>
+				<button>orange</button>
+				<button>green</button>
 			</div>
 		</div>
 	</div>
@@ -34,7 +34,7 @@ setTimeout(() => {
 			ex007contentElem.style.setProperty('--ball-color', 'red');
 		})
 		buttonBlueElem.addEventListener('click', () => {
-			ex007contentElem.style.setProperty('--ball-color', 'navy');
+			ex007contentElem.style.setProperty('--ball-color', 'darkorange');
 		})
 		buttonGreenElem.addEventListener('click', () => {
 			ex007contentElem.style.setProperty('--ball-color', 'darkgreen');
