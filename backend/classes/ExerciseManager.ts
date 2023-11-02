@@ -46,7 +46,7 @@ export class ExerciseManager {
 	}
 }
 		`
-		tools.addLineInFile('./src/main.scss', '@@FIRSTLINE', content);
+		tools.addLineInFile('./src/exercises.scss', '@@FIRSTLINE', content);
 	}
 
 	private createCallComponentCode() {
