@@ -1,6 +1,33 @@
 .ex008 {
 	.content {
-		
+		height: 10rem;
+
+		.pause {
+			cursor: pointer;
+		}
+
+		.ball {
+			animation-name: smallBall;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+			animation-play-state: running;
+			animation-direction: alternate;
+			width: 2rem;
+			height: 2rem;
+			background-color: blue;
+			border-radius: 50%;
+			position: relative;
+		}	
+
+		@keyframes smallBall {
+			from {
+				top: 0;
+			}
+			to {
+				top: 6rem;
+			}
+		}
 	}
 }
 		
@@ -19,9 +46,6 @@
 
 		.ball {
 			border-radius: 50%;
-		}
-
-		.square {
 		}
 
 		.messageArea {

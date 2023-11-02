@@ -24,14 +24,12 @@ export const Ex007 = () => {
 
 setTimeout(() => {
 	const ex007contentElem = document.querySelector<HTMLDivElement>('.ex007 .content');
-	const ballElem = document.querySelector<HTMLButtonElement>('.ball');
-	const squareElem = document.querySelector<HTMLButtonElement>('.square');
-	const buttonStartResetElem = document.querySelector<HTMLButtonElement>('.buttonArea button:nth-child(1)');
-	const buttonRedElem = document.querySelector<HTMLButtonElement>('.buttonArea button:nth-child(2)');
-	const buttonBlueElem = document.querySelector<HTMLButtonElement>('.buttonArea button:nth-child(3)');
-	const buttonGreenElem = document.querySelector<HTMLButtonElement>('.buttonArea button:nth-child(4)');
-
-	console.log(buttonRedElem);
+	const ballElem = document.querySelector<HTMLButtonElement>('.ex007 .ball');
+	const squareElem = document.querySelector<HTMLButtonElement>('.ex007 .square');
+	const buttonStartResetElem = document.querySelector<HTMLButtonElement>('.ex007 .buttonArea button:nth-child(1)');
+	const buttonRedElem = document.querySelector<HTMLButtonElement>('.ex007 .buttonArea button:nth-child(2)');
+	const buttonBlueElem = document.querySelector<HTMLButtonElement>('.ex007 .buttonArea button:nth-child(3)');
+	const buttonGreenElem = document.querySelector<HTMLButtonElement>('.ex007 .buttonArea button:nth-child(4)');
 
 	let isMoving = false;
 
