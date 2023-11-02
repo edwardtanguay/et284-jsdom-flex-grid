@@ -7,3 +7,13 @@ export const Ex010 = () => {
 	</div>
 `
 }
+
+setTimeout(() => {
+	const imageAreaElem = document.querySelector<HTMLSpanElement>('.ex010 .imageArea');
+
+	if (imageAreaElem) {
+		imageAreaElem.addEventListener('click', () => {
+			imageAreaElem.style.opacity = '.5';
+		})
+	}
+})
