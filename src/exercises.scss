@@ -7,6 +7,18 @@
 			background-size: cover;
 			background-image: url('../images/rocks.png');
 			border-radius: .5rem;
+			animation-duration: .5s;
+			cursor: pointer;
+		}
+
+		@keyframes pulsate010 {
+			0%,100% {
+				transform: scale(1)
+			}
+
+			50% {
+				transform: scale(0.8);
+			}
 		}
 
 	}

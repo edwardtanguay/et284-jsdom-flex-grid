@@ -12,8 +12,12 @@ setTimeout(() => {
 	const imageAreaElem = document.querySelector<HTMLSpanElement>('.ex010 .imageArea');
 
 	if (imageAreaElem) {
+		imageAreaElem.style.animationName = '';
 		imageAreaElem.addEventListener('click', () => {
-			imageAreaElem.style.opacity = '.5';
+			setTimeout(() => {
+				imageAreaElem.style.animationName = '';
+			}, 500)
+			imageAreaElem.style.animationName = 'pulsate010';
 		})
 	}
 })
