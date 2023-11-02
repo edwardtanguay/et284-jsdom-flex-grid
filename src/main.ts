@@ -1,4 +1,5 @@
 import { BoxWrapper } from './components/BoxWrapper';
+import { Ex010 } from './examples/Ex010'
 import { Ex009 } from './examples/Ex009'
 import { Ex008 } from './examples/Ex008'
 import { Ex007 } from './examples/Ex007'
@@ -13,6 +14,7 @@ import './exercises.scss';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 	<h1 class="text-3xl mb-6">Flex, Grid and Animation Practice</h1>
+	${BoxWrapper('Ex010', Ex010, '')}
 	${BoxWrapper('Ex009', Ex009, 'animation percentage')}
 	${BoxWrapper('Ex008', Ex008, 'animation to/from')}
 	${BoxWrapper('Ex007', Ex007, 'CSS variables - animation')}

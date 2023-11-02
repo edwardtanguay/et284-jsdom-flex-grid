@@ -16,8 +16,8 @@ setTimeout(() => {
 	const pauseElem = document.querySelector<HTMLSpanElement>('.ex008 .pause');
 	const ballElem = document.querySelector<HTMLDivElement>('.ex008 .ball');
 
-
 	if (pauseElem && ballElem) {
+		ballElem.style.animationPlayState = 'paused';
 		pauseElem.addEventListener('click', () => {
 			ballElem.style.animationPlayState = ballElem.style.animationPlayState === 'paused' ? 'running' : 'paused';
 		})

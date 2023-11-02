@@ -1,3 +1,9 @@
+.ex010 {
+	.content {
+		
+	}
+}
+		
 .ex009 {
 	.content {
 		height: 10rem;
@@ -11,7 +17,7 @@
 			animation-duration: 1s;
 			animation-iteration-count: infinite;
 			animation-timing-function: ease-in-out;
-			animation-play-state: running;
+			animation-play-state: paused;
 			animation-direction: alternate;
 			width: 2rem;
 			height: 2rem;
@@ -62,7 +68,7 @@
 			animation-duration: 1s;
 			animation-iteration-count: infinite;
 			animation-timing-function: ease-in-out;
-			animation-play-state: running;
+			animation-play-state: paused;
 			animation-direction: alternate;
 			width: 2rem;
 			height: 2rem;
