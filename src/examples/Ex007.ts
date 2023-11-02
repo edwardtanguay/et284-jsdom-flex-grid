@@ -7,13 +7,14 @@ export const Ex007 = () => {
 				<div class="shape square"></div>
 			</div>
 			<div class="messageArea">
-				<div class="message1">The ball is moving.</div>
+				<div class="message1">The ball can move.</div>
 				<div class="message2">All have the same CSS color variable.</div>
-				<div class="message3">The square is moving.</div>
+				<div class="message3">The square can move.</div>
 			</div>
 			<div class="buttonArea">
+				<button>start/reset</button>
 				<button>red</button>
-				<button>orange</button>
+				<button>blue</button>
 				<button>green</button>
 			</div>
 		</div>
@@ -23,18 +24,36 @@ export const Ex007 = () => {
 
 setTimeout(() => {
 	const ex007contentElem = document.querySelector<HTMLDivElement>('.ex007 .content');
-	const buttonRedElem = document.querySelector<HTMLButtonElement>('.buttonArea button:nth-child(1)');
-	const buttonBlueElem = document.querySelector<HTMLButtonElement>('.buttonArea button:nth-child(2)');
-	const buttonGreenElem = document.querySelector<HTMLButtonElement>('.buttonArea button:nth-child(3)');
+	const ballElem = document.querySelector<HTMLButtonElement>('.ball');
+	const squareElem = document.querySelector<HTMLButtonElement>('.square');
+	const buttonStartResetElem = document.querySelector<HTMLButtonElement>('.buttonArea button:nth-child(1)');
+	const buttonRedElem = document.querySelector<HTMLButtonElement>('.buttonArea button:nth-child(2)');
+	const buttonBlueElem = document.querySelector<HTMLButtonElement>('.buttonArea button:nth-child(3)');
+	const buttonGreenElem = document.querySelector<HTMLButtonElement>('.buttonArea button:nth-child(4)');
 
 	console.log(buttonRedElem);
 
-	if (ex007contentElem && buttonRedElem && buttonBlueElem && buttonGreenElem) {
+	let isMoving = false;
+
+	if (ex007contentElem && ballElem && squareElem && buttonStartResetElem && buttonRedElem && buttonBlueElem && buttonGreenElem) {
+		buttonStartResetElem.addEventListener('click', () => {
+			if (!isMoving) {
+				ballElem.style.animation = 'slide-right 3s linear infinite';
+				squareElem.style.animation = 'slide-right 3s linear infinite';
+				squareElem.style.animationDelay = '1.5s';
+			} else {
+				ballElem.style.animation = '';
+				squareElem.style.animation = '';
+				squareElem.style.animationDelay = '';
+				ex007contentElem.style.setProperty('--ball-color', '#777');
+			}
+			isMoving = !isMoving;
+		})
 		buttonRedElem.addEventListener('click', () => {
 			ex007contentElem.style.setProperty('--ball-color', 'red');
 		})
 		buttonBlueElem.addEventListener('click', () => {
-			ex007contentElem.style.setProperty('--ball-color', 'darkorange');
+			ex007contentElem.style.setProperty('--ball-color', 'blue');
 		})
 		buttonGreenElem.addEventListener('click', () => {
 			ex007contentElem.style.setProperty('--ball-color', 'darkgreen');

@@ -1,3 +1,9 @@
+.ex008 {
+	.content {
+		
+	}
+}
+		
 .ex007 {
 	.content {
 		--ball-color: #777;
@@ -7,7 +13,6 @@
 			background-color: var(--ball-color);
 			width: 4rem;
 			height: 4rem;
-			animation: slide-right 3s linear infinite;
 			margin-top: .5rem;
 			box-shadow: 5px 5px 3px #aaa;
 		}
@@ -17,7 +22,6 @@
 		}
 
 		.square {
-			animation-delay: 1.5s;
 		}
 
 		.messageArea {
