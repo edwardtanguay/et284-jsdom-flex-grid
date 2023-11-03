@@ -14,12 +14,16 @@ import { Ex002 } from './examples/Ex002';
 import { Ex001 } from './examples/Ex001';
 import './style.scss';
 import './exercises.scss';
+import learnLinks from './data/learnLinks.json';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 	<h1 class="text-3xl mb-2">Flex, Grid and Animation Practice</h1>
-	<nav class="mb-4">
-		<a target="_blank" class="underline" href="https://github.com/edwardtanguay/et284-jsdom-flex-grid">GitHub repository</a> &#x2022; 
-		<a target="_blank" class="underline" href="https://et284-jsdom-flex-grid.vercel.app">live site</a>
+	<nav class="main mb-4">
+		<a target="_blank" class="base" href="https://github.com/edwardtanguay/et284-jsdom-flex-grid">GitHub repository</a> &#x2022;  
+		<a target="_blank" class="base" href="https://et284-jsdom-flex-grid.vercel.app">live site</a> &#x2022; 
+		${learnLinks.map(learnLink => {
+			return `<a target="_blank" href="${learnLink.url}">${learnLink.topic}</a>`
+		}).join(' &#x2022; ')}
 	</nav>
 	${BoxWrapper('Ex013', Ex013, 'menu with hover transition')}
 	${BoxWrapper('Ex012', Ex012, 'transition with three properties')}

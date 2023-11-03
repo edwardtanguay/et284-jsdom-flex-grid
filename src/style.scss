@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+nav.main {
+	font-family: arial;
+	a {
+		text-decoration: underline;
+	}
+	a.base {
+		color: navy;
+	}
+}
+
 .boxWrapper {
 	border: 1px solid #555;
 	border-radius: .5rem;
