@@ -1,4 +1,5 @@
 import { BoxWrapper } from './components/BoxWrapper';
+import { Ex013 } from './examples/Ex013'
 import { Ex012 } from './examples/Ex012'
 import { Ex011 } from './examples/Ex011'
 import { Ex010 } from './examples/Ex010'
@@ -16,6 +17,7 @@ import './exercises.scss';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 	<h1 class="text-3xl mb-6">Flex, Grid and Animation Practice</h1>
+	${BoxWrapper('Ex013', Ex013, '')}
 	${BoxWrapper('Ex012', Ex012, 'transition with three properties')}
 	${BoxWrapper('Ex011', Ex011, 'pulsate on hover')}
 	${BoxWrapper('Ex010', Ex010, 'pulsate image with text')}

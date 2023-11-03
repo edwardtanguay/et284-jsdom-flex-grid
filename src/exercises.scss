@@ -1,15 +1,73 @@
+.ex013 {
+	.content {
+		height: 12rem;
+
+		.navbar {
+			list-style: none;
+			padding: 0;
+			background-color: #333;
+			display: flex;
+		}
+
+		.navbar li {
+			margin: 0;
+			padding: 0;
+			position: relative;
+		}
+
+		.navbar a {
+			text-decoration: none;
+			color: white;
+			display: block;
+			padding: 10px 20px;
+		}
+
+		.dropdown-content {
+			opacity: 0;
+			position: absolute;
+			background-color: #444;
+			min-width: 160px;
+			z-index: 1;
+			transition: opacity .2s ease-in-out;
+		}
+
+		.dropdown-content a {
+			padding: 10px 20px;
+		}
+
+		.dropdown:hover .dropdown-content {
+			opacity: 1;
+			// animation-name: pulsate013;
+			// animation-duration: 1s;
+		}
+
+		@keyframes pulsate013 {
+			0%,100% {
+				color: black;
+			}
+			50% {
+				color: red;
+			}
+		}
+
+	}
+}
+
 .ex012 {
 	.content {
 		padding: 1rem;
+
 		.row {
 			padding-bottom: .5rem;
 		}
+
 		.row input {
 			border: 1px solid #ccc;
 			padding: .3rem;
 			border-radius: .5rem;
 			font-family: courier;
 			transition: color, border, background-color .5s ease-in-out;
+
 			&:focus {
 				color: red;
 				outline: 1px solid white;
@@ -19,10 +77,11 @@
 		}
 	}
 }
-		
+
 .ex011 {
 	.content {
 		height: 5rem;
+
 		p {
 			font-size: 2rem;
 			display: inline;
@@ -30,6 +89,7 @@
 			cursor: pointer;
 			user-select: none;
 			z-index: 1;
+
 			&:hover {
 				animation-name: attractAttention;
 				animation-duration: .5s;
@@ -38,9 +98,11 @@
 			}
 
 			@keyframes attractAttention {
-				0%, 100% {
+				0%,
+				100% {
 					color: black;
 				}
+
 				50% {
 					color: red;
 					font-size: 3rem;
@@ -50,7 +112,7 @@
 		}
 	}
 }
-		
+
 .ex010 {
 	.content {
 
@@ -69,7 +131,9 @@
 		}
 
 		@keyframes pulsate010 {
-			0%,100% {
+
+			0%,
+			100% {
 				transform: scale(1)
 			}
 
