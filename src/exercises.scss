@@ -40,17 +40,6 @@
 
 		.dropdown:hover .dropdown-content {
 			opacity: 1;
-			// animation-name: pulsate013;
-			// animation-duration: 1s;
-		}
-
-		@keyframes pulsate013 {
-			0%,100% {
-				color: black;
-			}
-			50% {
-				color: red;
-			}
 		}
 
 		a:hover {

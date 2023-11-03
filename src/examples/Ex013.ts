@@ -21,7 +21,31 @@ export const Ex013 = () => {
 				</li>
 				<li><a href="#">Contact</a></li>
 			</ul>
+			<p class="message text-slate-400 text-3xl relative text-right w-[42.5rem]"></p>
 		</div>
 	</div>
 `
 }
+
+setTimeout(() => {
+	const aElems = document.querySelectorAll<HTMLAnchorElement>('.ex013 a');
+	const aDropdownContentElems = document.querySelectorAll<HTMLDivElement>('.ex013 div.dropdown-content');
+	const messageElem = document.querySelector<HTMLParagraphElement>('.ex013 .message');
+
+	if (aElems && messageElem) {
+		for (const aElem of aElems) {
+			aElem.addEventListener('click', (e) => {
+				e.preventDefault();
+				const elem = e.target as HTMLAnchorElement;
+				if (elem) {
+					const menuText = elem.innerText;
+					messageElem.innerText = menuText;
+
+					for (const aDropdownContentElem of aDropdownContentElems) {
+						aDropdownContentElem.focus();
+					}
+				}
+			})
+		}
+	}
+})

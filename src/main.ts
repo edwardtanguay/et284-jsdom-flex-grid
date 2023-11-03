@@ -17,7 +17,7 @@ import './exercises.scss';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 	<h1 class="text-3xl mb-6">Flex, Grid and Animation Practice</h1>
-	${BoxWrapper('Ex013', Ex013, '')}
+	${BoxWrapper('Ex013', Ex013, 'menu with hover transition')}
 	${BoxWrapper('Ex012', Ex012, 'transition with three properties')}
 	${BoxWrapper('Ex011', Ex011, 'pulsate on hover')}
 	${BoxWrapper('Ex010', Ex010, 'pulsate image with text')}
