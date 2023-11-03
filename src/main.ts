@@ -16,7 +16,11 @@ import './style.scss';
 import './exercises.scss';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
-	<h1 class="text-3xl mb-6">Flex, Grid and Animation Practice</h1>
+	<h1 class="text-3xl mb-2">Flex, Grid and Animation Practice</h1>
+	<nav class="mb-4">
+		<a target="_blank" class="underline" href="https://github.com/edwardtanguay/et284-jsdom-flex-grid">GitHub repository</a> &#x2022; 
+		<a target="_blank" class="underline" href="https://et284-jsdom-flex-grid.vercel.app">live site</a>
+	</nav>
 	${BoxWrapper('Ex013', Ex013, 'menu with hover transition')}
 	${BoxWrapper('Ex012', Ex012, 'transition with three properties')}
 	${BoxWrapper('Ex011', Ex011, 'pulsate on hover')}
