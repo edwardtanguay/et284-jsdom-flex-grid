@@ -1,14 +1,62 @@
 [
 	{
 		"topic": "grid-template-columns",
-		"url": "https://www.w3schools.com/cssref/tryit.php?filename=trycss_grid-template-rows"
+		"url": "https://www.w3schools.com/cssref/tryit.php?filename=trycss_grid-template-rows",
+		"kind": "example"
 	},
 	{
 		"topic": "grid-template-rows",
-		"url": "https://www.w3schools.com/cssref/tryit.php?filename=trycss_grid-template-rows"
+		"url": "https://www.w3schools.com/cssref/tryit.php?filename=trycss_grid-template-rows",
+		"kind": "example"
 	},
 	{
 		"topic": "grid-gap",
-		"url": "https://www.w3schools.com/cssref/tryit.php?filename=trycss_grid-template-rows"
+		"url": "https://www.w3schools.com/cssref/tryit.php?filename=trycss_grid-template-rows",
+		"kind": "example"
+	},
+	{
+		"topic": "media queries",
+		"url": "https://www.w3schools.com/css/css3_mediaqueries_ex.asp",
+		"kind": "example"
+	},
+	{
+		"topic": "grid",
+		"url": "https://www.w3schools.com/css/css_grid.asp",
+		"kind": "example"
+	},
+	{
+		"topic": "justify-content",
+		"url": "https://www.w3schools.com/cssref/tryit.php?filename=trycss3_justify-content",
+		"kind": "example"
+	},
+	{
+		"topic": "flex",
+		"url": "https://www.w3schools.com/cssref/tryit.php?filename=trycss3_justify-content",
+		"kind": "example"
+	},
+	{
+		"topic": "flex",
+		"url": "https://www.w3schools.com/cssref/css3_pr_flex.php",
+		"kind": "explanation"
+	},
+	{
+		"topic": "flex-grow",
+		"url": "https://www.w3schools.com/cssref/tryit.php?filename=trycss3_flex-grow",
+		"kind": "example"
+	},
+	{
+		"topic": "flex-grow",
+		"url": "https://www.w3schools.com/cssref/css3_pr_flex-grow.php",
+		"kind": "explanation"
+	},
+	{
+		"topic": "flex-shrink",
+		"url": "https://www.w3schools.com/cssref/tryit.php?filename=trycss3_flex-shrink",
+		"kind": "explanation"
+	},
+	{
+		"topic": "grid-column-gap",
+		"url": "https://www.w3schools.com/cssref/tryit.php?filename=trycss_grid-column-gap",
+		"kind": "example"
 	}
 ]

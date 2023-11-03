@@ -4,11 +4,17 @@
 
 nav.main {
 	font-family: arial;
+
 	a {
 		text-decoration: underline;
 	}
+
 	a.base {
 		color: navy;
+	}
+
+	a.explanation {
+		font-weight: bold;
 	}
 }
 

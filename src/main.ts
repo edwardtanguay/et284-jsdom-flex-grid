@@ -22,7 +22,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = /*html*/ `
 		<a target="_blank" class="base" href="https://github.com/edwardtanguay/et284-jsdom-flex-grid">GitHub repository</a> &#x2022;  
 		<a target="_blank" class="base" href="https://et284-jsdom-flex-grid.vercel.app">live site</a> &#x2022; 
 		${learnLinks.map(learnLink => {
-			return `<a target="_blank" href="${learnLink.url}">${learnLink.topic}</a>`
+			return `<a target="_blank" class="${learnLink.kind}" href="${learnLink.url}">${learnLink.topic}</a>`
 		}).join(' &#x2022; ')}
 	</nav>
 	${BoxWrapper('Ex013', Ex013, 'menu with hover transition')}
